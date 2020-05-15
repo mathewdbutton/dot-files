@@ -1,0 +1,23 @@
+[core]
+	editor = nvim
+	hooksPath = /Users/mathew/.githooks
+	excludesfile = /Users/mathew/.gitignore
+[user]
+	name = Mathew Button
+	email = mat@pushbutton.xyz
+[alias]
+	st = status -s
+	fp = fetch -p
+	ap = add --patch
+	l = log --pretty=oneline --graph --decorate --all
+	b = branch
+	rbm = pull --rebase origin master
+	amd = commit --amend --no-edit
+	lb = !git reflog show --pretty=format:'%gs ~ %gd' --date=relative | grep 'checkout:' | grep -oE '[^ ]+ ~ .*' | awk -F~ '!seen[$1]++' | head -n 10 | awk -F' ~ HEAD@{' '{printf(\"  \\033[33m%s: \\033[37m %s\\033[0m\\n\", substr($2, 1, length($2)-1), $1)}'
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	template = /Users/mathew/.gitmessage
