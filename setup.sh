@@ -25,3 +25,6 @@ for file_name in $files
 do
   symlink_if_missing $file_name
 done
+
+echo "Running brew init script"
+./brew.sh
