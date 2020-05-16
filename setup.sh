@@ -28,3 +28,4 @@ done
 
 echo "Running brew init script"
 ./brew.sh
+./asdf.sh
