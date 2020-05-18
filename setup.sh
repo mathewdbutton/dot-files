@@ -13,7 +13,7 @@ function symlink_if_missing() {
     echo "$FILE already exists, not copying"
   else
     echo "~/$FILE does not exist, symlinking"
-    ln -sv $( dirname "${BASH_SOURCE[0]}" )/${FILE} ~
+    ln -sv $( pwd )/${FILE} ~
   fi
 }
 
