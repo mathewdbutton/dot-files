@@ -20,4 +20,4 @@
 	process = git-lfs filter-process
 	required = true
 [commit]
-	template = /Users/mathew/.gitmessage
+	template = ~/.gitmessage
