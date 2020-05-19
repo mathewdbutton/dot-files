@@ -116,9 +116,9 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # To use git revise
 export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 
-source /Users/mathew/Library/Preferences/org.dystroy.broot/launcher/bash/br
-
 . $(brew --prefix asdf)/asdf.sh
 
 export WORKON_HOME=~/.virtualenvs
 source /Users/mathew/.asdf/installs/python/3.7.7/bin/virtualenvwrapper.sh
+
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
