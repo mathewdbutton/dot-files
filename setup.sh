@@ -4,6 +4,14 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+echo "Running brew init script"
+./brew.sh
+
+echo "Installing Oh-my-zsh - NOTE this is probably going to override your .zshrc file"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+./asdf.sh
+
 # Checks if the symlink already exists,
 # if it does don't create symlink
 # Else create a symlink
@@ -25,7 +33,3 @@ for file_name in $files
 do
   symlink_if_missing $file_name
 done
-
-echo "Running brew init script"
-./brew.sh
-./asdf.sh
