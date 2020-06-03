@@ -1,6 +1,5 @@
 [core]
 	editor = nvim
-	hooksPath = /Users/mathew/.githooks
 	excludesfile = /Users/mathew/.gitignore
 [user]
 	name = Mathew Button

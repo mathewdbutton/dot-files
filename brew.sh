@@ -17,3 +17,5 @@ brew install neovim
 brew install overmind
 
 brew install zsh
+
+brew install coreutils gpg

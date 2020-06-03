@@ -119,6 +119,9 @@ export PATH="$HOME/Library/Python/3.7/bin:$PATH"
 . $(brew --prefix asdf)/asdf.sh
 
 export WORKON_HOME=~/.virtualenvs
-source /Users/mathew/.asdf/installs/python/3.7.7/bin/virtualenvwrapper.sh
+# source /Users/mathew/.asdf/installs/python/3.7.7/bin/virtualenvwrapper.sh
 
+# Allows vscode to be called from commandline
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+export EDITOR="code"
