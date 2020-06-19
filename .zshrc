@@ -124,4 +124,4 @@ export WORKON_HOME=~/.virtualenvs
 # Allows vscode to be called from commandline
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-export EDITOR="code"
+export EDITOR="code --wait"
